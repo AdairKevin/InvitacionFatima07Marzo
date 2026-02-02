@@ -7,7 +7,7 @@ function abrirSobre() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const DATE_TARGET = new Date("12/20/2025 04:00 PM");
+  const DATE_TARGET = new Date("03/07/2026 05:00 PM");
 
   const SPAN_DAYS = document.querySelector("span#days");
   const SPAN_HOURS = document.querySelector("span#hours");
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const DURATION = DATE_TARGET - NOW;
     const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
     const REMAINING_HOURS = Math.floor(
-      (DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR
+      (DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR,
     );
     const REMAINING_MINUTES = Math.floor(
-      (DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE
+      (DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE,
     );
     const REMAINING_SECONDS = Math.floor(
-      (DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND
+      (DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND,
     );
 
     SPAN_DAYS.textContent = REMAINING_DAYS;

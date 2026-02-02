@@ -648,7 +648,7 @@ td span {
 /* -----------------------
           FOOTER
   --------------------------*/
-footer {
+.footer {
   background: #2e2e2e;
   color: rgba(255, 255, 255, 0.7);
   padding: 1rem;
@@ -657,10 +657,10 @@ footer {
   letter-spacing: 1px;
 }
 
-footer a {
+.footer a {
   color: var(--color-rojo2);
 }
 
-footer a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
